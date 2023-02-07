@@ -1,7 +1,141 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: steelblue;
+    text-decoration: underline;
+    margin: 20px 0 0 20px;
+    
+}
+
+p {
+    margin: 15px;
+    text-indent: 30px;
+        color :rgb(40, 81, 114);
+}
+
+body {
+    background-color: blanchedalmond;
+}
+/* header styling */
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap:wrap;
+    width: 768px;
+    margin: 0 0 20px 0;
+    background-color: blanchedalmond;
+}
+
+.header li {
+    float:right;
+    padding: 25px;
+    list-style: none;
+}
+
+#headertxt {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(40, 81, 114);
+}
+
+
+/* Avatar */
 .transitionpicture {
     height: 400px;
     width: 100%;
-    background-image: url()
+    background-image: url("./Power-Chainsaw-Man-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+/* Background coloring */
+#mainbg {
+    background-color:blanchedalmond;
+}
+
+/* main card styling */
+#cardmain{
+    display:flex;
+    justify-content: center;
+}
+
+ .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    background-color: blanchedalmond;
+}
+
+/* spacing between smaller cards */
+.card {
+    margin: 0 30px;
+}
+
+
+.cardheader{
+    display:flex;
+    justify-content: center;
+}
+
+/* Styling for each card title */
+ #cardheader{
+    color:rgb(40, 81, 114);
+    font-size: 24px;
+    width: fit-content;
+    
+}  
+
+/* Styling for contact links */
+.footer {
+    background-color: blanchedalmond;
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+.footer li{
+    float:right;
+    list-style: none;
+    color:black;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.socials {
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+}
+
+#footertxt {
+    font-size: 24px;
+    text-decoration: none;
+    color:rgb(40, 81, 114);
+}
+
+@media screen and (max-width: 768px) {
+
+.navbar {
+    flex-direction: column;
+    z-index: 1;
+}
+
+#footertxt{
+    font-size: 12px;
+}
 
 }

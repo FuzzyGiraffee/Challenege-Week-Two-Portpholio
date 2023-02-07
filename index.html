@@ -3,50 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Summer's Portpholio</title>
-    <!-- Put css reset here  -->
-    <!-- <link rel="stylesheet" >  -->
+    <title>Summer's Portfolio</title>
     <link rel="stylesheet"  href="./assets/assets.css"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
-<body>
-     <header>
+<!-- Header WIth links -->
+<body style="margin: 0;">
+     <header class="header">
         <h1>Summer Flores</h1>
-            <ul>
-                <li>About Me</li>
-                <li>Portpholio</li>
-                <li>Contact Me</li>
+            <ul class="navbar">
+                <li>
+                    <a id= "headertxt" href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a id= "headertxt" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a id= "headertxt" href="#contact">Contact Me</a>
+                </li>
+                
             </ul>
     </header>
+    <!-- Transition Picture -->
     <div class="transitionpicture"></div>
-    <main>
-        <section>
+        <section id="mainbg">
             <article>
-                <h2>About Me</h2>
+                <h1 id="about-me">About Me</h1>
                 <div>
-                    <p>Lorem Ipsum</p>
+                    <p>I am Summer Flores, a 23 year old trans women who is currently learning the fundamentals of full stack web design. My ambiition is to eventually build the skils required to work as a cyber security professional. Unfortunately due to socioeconomic factors I am unable to presue the required BS in computer science traditionally required to enter the field. However, I am confident my growing portflio will show my ambition and ability to learn various topics at a rapid pace. Currently my skillset is limited to basic CSS HTML and Javascript. However, thanks to the Full Stack Web Development Bootcamp Provided by UTSA in conjunction with EDX I will aquire a myriad of revelvant skills in the next 6 months.</p>
                 </div>
             </article>
-            <article>
-                <h2>Portpholio</h2>
-                    <ul>
-                        <li>Project One</li>
-                        <li>Project Two</li>
-                        <li>Project Three</li>
-                        <li>Project Four</li>
-                    </ul>
+            <!-- Project Flex Containers -->
+            <article id="boxes">
+                
+                <h1 id="portfolio">Portfolio</h1>
+                <div id="cardmain">
+                <section  class="maincard">
+                    <div class="cardheader">
+                    <header id="cardheader">Refactoring Assignment</header>
+                    </div>
+                    <a href="https://fuzzygiraffee.github.io/Refacotring-challenge-week-1/">
+                        <img  id=mainimage src="./assets/website-screenshot.png"/
+                            style="object-fit: cover;
+                            min-width: 70%;
+                            height:600px;"
+                        >
+                    </a>
+                </div>
+                </section>
+                <!-- Smaller Containers -->
+                <div class="cards">
+                <section class=card>
+                    <div class="cardheader">
+                    <header id="cardheader">Unfinished Password Generator</header>
+                    </div>
+                    <a href="https://fuzzygiraffee.github.io/Refacotring-challenge-week-1/">
+                        <img src="./assets/JavaScript-code.jpg"/
+                            style="object-fit: cover;
+                            height: 360px;
+                            width: 360px;">
+                    </a>
+                </section>
+                <section class="card">
+                    <div class="cardheader">
+                    <header id="cardheader">Unnamed Third Project</header>
+                    </div>
+                    <a href="https://fuzzygiraffee.github.io/Refacotring-challenge-week-1/">
+                        <img src="./assets/Question-Marks.png"
+                        style="object-fit: cover;
+                            height: 360px;
+                            width: 360px;">>
+                    </a>
+                </section>
+                </div>
             </article>
         </section>
     </main>
 
+<!-- Contact information -->
+    <footer class="footer">
+        <h1 id="contact">Contact Me</h1>
+            <ul class="socials">
+                <div>
+                <li id="footertxt">830-237-8180</li>
+                <li id="footertxt">summerflowers2357@gmail.com</li>
+                <li>
+                    <a id= "footertxt" href="https://twitter.com/SummerDayFlores">Twitter</a>
+                </li>
+                <li>
+                    <a id="footertxt" href="https://github.com/FuzzyGiraffee">Github</a>
+                </li>
 
-    <footer>
-        <h1>Contact Information</h1>
-            <ul>
-                <li>830-237-8180</li>
-                <li>summerflowers2357@gmail.com</li>
-                <li>Twitter</li>
-                <li>Github</li>
             </ul>
     </footer>
 </body>
