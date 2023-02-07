@@ -1,4 +1,4 @@
-# Portpholio
+# Portfolio
 
 ![Website](./assets/Wbesite-Screenshot-main.png)
 
