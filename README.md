@@ -1,6 +1,6 @@
 # Portpholio
 
-![Website](/assets/website-screenshot-main.png)
+![Website](./assets/Wbesite-Screenshot-main.png)
 
 ## Features
 
